@@ -12,7 +12,6 @@
 			text-align:center;
 			color: #999;
 		}
-git remote add origin https://github.com/andrex873/laracodio.git
         
 		.welcome {
 			width: 300px;
