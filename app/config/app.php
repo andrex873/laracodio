@@ -121,6 +121,13 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+        
+        // Providers terceros
+        'Nitmedia\Wkhtml2pdf\Wkhtml2pdfServiceProvider',
+        
+        // Providers aplicacion
+        'Laracodio\Cache\GenericCacheProvider',
+        'Laracodio\Repo\UserRepoProvider'
 
 	),
 
@@ -188,6 +195,9 @@ return array(
 		'URL'               => 'Illuminate\Support\Facades\URL',
 		'Validator'         => 'Illuminate\Support\Facades\Validator',
 		'View'              => 'Illuminate\Support\Facades\View',
+        
+        // aliases de terceros
+        'PDF' => 'Nitmedia\Wkhtml2pdf\Facades\Wkhtml2pdf',
 
 	),
 

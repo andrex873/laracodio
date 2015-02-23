@@ -4,11 +4,14 @@
         <title>Test ATH S.A.</title>
         <meta charset="utf-8"/>
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.2/lumen/bootstrap.min.css">
+        
+        {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> --}}
         {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> --}}
+        {{-- <link rel="stylesheet" href="{{ asset('css/main.css') }}"> --}}
     </head>
     <body>
-        
+        <div class="div-br"></div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
@@ -22,5 +25,7 @@
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        {{-- Archivo de peticiones ajax --}}
+        <script src="{{ asset('/js/ajax.js') }}"></script>
     </body>
 </htm>

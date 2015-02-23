@@ -1,23 +1,56 @@
 <?php
 
+use Laracodio\Validation\PersonasIndexFiltroValidator as PerValidator;
+
 class HomeController extends BaseController {
 
-	/*
-	|--------------------------------------------------------------------------
-	| Default Home Controller
-	|--------------------------------------------------------------------------
-	|
-	| You may wish to use controllers instead of, or in addition to, Closure
-	| based routes. That's great! Here is an example controller method to
-	| get you started. To route to this controller, just add the route:
-	|
-	|	Route::get('/', 'HomeController@showWelcome');
-	|
-	*/
-
-	public function index()
-	{
-		return View::make('home.index');
+    private $cache;
+    
+    private $pVal;
+    
+    public function __construct(PerValidator $validator){
+        $this->pVal = $validator;
+    }
+    
+	public function index()	{
+        /*
+        //return dd($this->cache);
+        $data = array(
+            'name' => "juana carolina morales",
+            'email' => "Uncorreo dominio.com",
+            'phone' => 15242369,
+            'pin_code' => "pincode",
+        );
+        //return \Laracodio\Cache\CacheKeys::FORM_TIPO_IDENTIFICACION;
+		
+        $to = "";
+        try {
+            // Enviar el correo con laravel y mailgun
+            Mail::send('emails.welcome', ['nombre'=>"Andres Pepe"], function($correo) use($to){
+                $correo->to($to)->subject("Otro saludo mejor");
+            });
+            $mensaje = "Su mensaje fue enviado con exito....";
+            
+            
+        } catch(Exception $ex){
+            $mensaje = "Hay un error en el coreo: ";
+        }
+        
+        
+        //return dd($this->pVal->validate($data));
+        
+        return View::make('home.index', compact('mensaje'));
+		//return dd($this->uVal);
+		*/
 	}
+    
+    
+    public function main(){
+        return View::make('home.main');
+    }
+    
+    
+    
+    
 
 }

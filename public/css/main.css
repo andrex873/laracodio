@@ -1,0 +1,54 @@
+/*
+    Document   : laracodio/public/css/main．css
+    Created on : 2014-12-05 08:14 PM
+    Author     : andrex873
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+/*
+body{
+    background-image: url('http://subtlepatterns.com/patterns/slash_it.png'); 
+    background-position: initial; 
+    background-repeat: initial;
+}
+.div-br{
+    margin-top:25px;
+}
+.login-contente{
+    background-color:silver;
+}
+*/
+
+
+
+header {
+    background-color: #3686be;
+    color: white;
+    padding: 1.5em;
+    vertical-align: middle;
+}
+
+header h1.titulo{
+    margin: 0;
+}
+.titulo{
+    font-family: 'proxima-nova', sans-serif;
+}
+.logo {
+    
+    width: 100%;
+    height: 50px;
+    border: 1px dashed silver;
+    
+}
+.avatar-nombre{
+    
+}
+.avatar{
+    
+    width: 100%;
+    height: 50px;
+    border: 1px dashed silver;
+    border-radius: 50%;
+}

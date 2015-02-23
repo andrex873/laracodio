@@ -5,9 +5,14 @@
 	"license": "MIT",
 	"type": "project",
 	"require": {
-		"laravel/framework": "4.2.*"
+		"laravel/framework": "4.2.*",
+		"guzzlehttp/guzzle": "~4.0",
+        "nitmedia/wkhtml2pdf": "dev-master"
 	},
 	"autoload": {
+        "psr-4": {
+             "Laracodio\\": "app/Laracodio"
+        },
 		"classmap": [
 			"app/commands",
 			"app/controllers",
