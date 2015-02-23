@@ -6,8 +6,7 @@
 	"type": "project",
 	"require": {
 		"laravel/framework": "4.2.*",
-		"guzzlehttp/guzzle": "~4.0",
-        "nitmedia/wkhtml2pdf": "dev-master"
+		"guzzlehttp/guzzle": "~4.0"
 	},
 	"autoload": {
         "psr-4": {

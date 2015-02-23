@@ -14,16 +14,6 @@
 Route::get('/', "HomeController@index");
 Route::get('main/', "HomeController@main");
 
-/*
-Route::get('puntosventa/', function()
-{
-	return View::make('puntosventa.index');
-});
-*/
-//Route::resource('/user/admin', 'AdminController');
-
-
-
 Route::get('/val', function() use($app){
     
     $data = [
@@ -41,7 +31,6 @@ Route::get('/val', function() use($app){
         $error = $ex->get_errors();
     }
     
-        
     //return dd($app['validator']);
     return dd($error);
 });
@@ -50,5 +39,3 @@ Route::get('/ajax', 'AjaxController@index');
 Route::post('/ajax/personas', 'AjaxController@personas');
 
 
-Route::get('pdf/', "ReposrtesController@index");
-Route::get('pdf/reporte1', "ReposrtesController@reporte1");

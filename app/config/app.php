@@ -123,7 +123,6 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
         
         // Providers terceros
-        'Nitmedia\Wkhtml2pdf\Wkhtml2pdfServiceProvider',
         
         // Providers aplicacion
         'Laracodio\Cache\GenericCacheProvider',
@@ -197,7 +196,6 @@ return array(
 		'View'              => 'Illuminate\Support\Facades\View',
         
         // aliases de terceros
-        'PDF' => 'Nitmedia\Wkhtml2pdf\Facades\Wkhtml2pdf',
 
 	),
 

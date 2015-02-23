@@ -42,6 +42,7 @@ class HomeController extends BaseController {
         return View::make('home.index', compact('mensaje'));
 		//return dd($this->uVal);
 		*/
+        return View::make('home.index');
 	}
     
     
