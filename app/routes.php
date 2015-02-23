@@ -50,5 +50,9 @@ Route::get('/ajax', 'AjaxController@index');
 Route::post('/ajax/personas', 'AjaxController@personas');
 
 
-Route::get('pdf/', "ReposrtesController@index");
-Route::get('pdf/reporte1', "ReposrtesController@reporte1");
+//Route::get('pdf/', "ReposrtesController@index");
+//Route::get('pdf/reporte1', "ReposrtesController@reporte1");
+
+
+Route::get('snappy/', "SnappyController@index");
+Route::get('snappy/reporte1', "SnappyController@reporte1");

@@ -12,9 +12,9 @@ class ReposrtesController extends BaseController {
         
         //PDF::setOrientation('Landscape');
         //PDF::setPageSize('letter');
-        PDF::setOptions(' --margin-left  0 --margin-right 0 --margin-top 0 ');
+        //PDF::setOptions(' --margin-left  0 --margin-right 0 --margin-top 0 ');
         //return PDF::getOptions();
-        return PDF::html('reportes.laboral');
+        return "Hola reportes";//PDF::html('reportes.laboral');
 
     }
 }
